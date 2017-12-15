@@ -1,0 +1,19 @@
+<h4>Edit Fan Profile</h4>
+
+<label>New Fan Name:</label>
+<input [(ngModel)]="selectedFan.name">
+<br>
+
+<label>New Fan Location:</label>
+<select [(ngModel)]="selectedFan.location">
+  <option value="Seattle area">Seattle area</option>
+  <option value="North of Seattle">North of Seattle</option>
+  <option value="Eastside">Eastside</option>
+  <option value="South of Seattle">South of Seattle</option>
+</select>
+<br>
+
+<label>New Fan Story:</label>
+<input [(ngModel)]="selectedFan.story">
+
+<button (click)="beginUpdatingFan(selectedFan)">Update</button>

@@ -1,7 +1,11 @@
 <h2>Fans</h2>
 
-<div *ngFor="let fan of fans | async" (click)="goToProfilePage(fan)" class="panel panel-default">
+<div *ngFor="let fan of fans | async" class="panel panel-default">
   <div class="panel-body">
-    <h3><em>{{fan.name}}</em> Member since: {{fan.signupDate}} from: {{fan.location}}</h3>
+    <h3 (click)="goToProfilePage(fan)"><em>{{fan.name}}</em> Member since: {{fan.signupDate}} from: {{fan.location}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{fan.story}}
+      <hr>
+      <app-edit-profile [selectedFan]="fan"></app-edit-profile>
   </div>
 </div>

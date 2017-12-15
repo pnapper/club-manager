@@ -26,8 +26,18 @@
           <option value="South of Seattle">South of Seattle</option>
         </select>
       </div>
+
+      <div>
+        <label>Fan Story (describe how you first heard about the band or the first show you ever saw):</label>
+        <br>
+        <textarea #newStory></textarea>
+      </div>
       <br>
-      <button (click)="submitForm(newName.value, newsignupDate.value, newLocation.value); newName.value=''; newsignupDate.value=''; newLocation.value=''">Add Profile</button>
+      <button (click)="submitForm(newName.value, newsignupDate.value, newLocation.value, newStory); newName.value=''; newsignupDate.value=''; newLocation.value=''; newStory.value=''">Add Profile</button>
     </div>
   </div>
+</div>
+
+<div>
+  <app-fans></app-fans>
 </div>

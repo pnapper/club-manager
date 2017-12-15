@@ -23,4 +23,12 @@ export class FanService {
   getFanById(fanId: number){
     return this.database.object('fans/' + fanId);
   }
+
+  updateFan(localUpdatedFan){
+    var fanEntryInFirebase = this.getFanById(localUpdatedFan.$key);
+    fanEntryInFirebase.update({name: localUpdatedFan.name,
+                               location: localUpdatedFan.location,
+                               story: localUpdatedFan.story
+                             });
+  }
 }

@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, signupDate: string, location: string) {
-    var newFan: Fan = new Fan(name, signupDate, location);
+  submitForm(name: string, signupDate: string, location: string, story: string) {
+    var newFan: Fan = new Fan(name, signupDate, location, story);
     this.fanService.addFan(newFan);
   }
 }
