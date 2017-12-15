@@ -19,8 +19,8 @@ export class FansComponent implements OnInit {
     this.fans = this.fanService.getFans();
   }
 
-  goToProfilePage(clickedFan: Fan) {
-    //  this.router.navigate(['fans', clickedFan.id]);
+  goToProfilePage(clickedFan) {
+    this.router.navigate(['fans', clickedFan.$key]);
    };
 
 }

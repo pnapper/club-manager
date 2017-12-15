@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Fan } from '../fan.model';
 import { FanService } from '../fan.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-fan-profile',
@@ -12,7 +13,7 @@ import { FanService } from '../fan.service';
 })
 export class FanProfileComponent implements OnInit {
   fanId: number = null;
-  fanToDisplay: Fan;
+  fanToDisplay;
 
   constructor(private route: ActivatedRoute,
               private location: Location,
@@ -20,9 +21,9 @@ export class FanProfileComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.fanId = parseInt(urlParameters['id']);
+      this.fanId = urlParameters['id'];
     });
-    // this.fanToDisplay = this.fanService.getFanById(this.fanId);
+    this.fanToDisplay = this.fanService.getFanById(this.fanId);
   }
 
 }

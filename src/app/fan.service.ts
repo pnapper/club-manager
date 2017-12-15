@@ -21,10 +21,6 @@ export class FanService {
   }
 
   getFanById(fanId: number){
-    // for (var i = 0; i <= FANS.length - 1; i++) {
-    //   if (FANS[i].id === fanId) {
-    //     return FANS[i];
-    //   }
-    // }
+    return this.database.object('fans/' + fanId);
   }
 }
