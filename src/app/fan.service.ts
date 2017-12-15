@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Fan } from './fan.model';
-// import { FANS } from './mock-fans';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -28,7 +27,8 @@ export class FanService {
     var fanEntryInFirebase = this.getFanById(localUpdatedFan.$key);
     fanEntryInFirebase.update({name: localUpdatedFan.name,
                                location: localUpdatedFan.location,
-                               story: localUpdatedFan.story
+                               story: localUpdatedFan.story,
+                               image: localUpdatedFan.image
                              });
   }
 

@@ -2,16 +2,19 @@
     "name": " Sara Anne",
     "signupDate": "6/17/17",
     "location": "Seattle",
-    "story": "I first heard about PDM from a friend. "
+    "story": "I first heard about PDM from a friend.",
+    "image": "gs://club-manager-60ec9.appspot.com/sara-anne.jpeg"
     }, {
     "name": "Wendy",
     "signupDate": "6/17/17",
     "location": "Edmonds",
-    "story": "I first saw PDM at the High Dive on June 6th, 2017 and they totally blew me away......."
+    "story": "I first saw PDM at the High Dive on June 6th, 2017 and they totally blew me away.......",
+    "image": "gs://club-manager-60ec9.appspot.com/donna-fire.jpeg"
       }, {
     "name": "Joey Rad",
     "singupDate": "8/21/17",
     "location": "Kirkland",
-    "story": "My favorite 80's tribute band by far in Seattle!"
+    "story": "My favorite 80's tribute band by far in Seattle!",
+    "image": "gs://club-manager-60ec9.appspot.com/joey-throwback.jpg"
   }]
 }

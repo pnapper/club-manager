@@ -13,6 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 export class FanProfileComponent implements OnInit {
   fanId: number = null;
+  image: string;
   fanToDisplay;
 
   constructor(private route: ActivatedRoute,
@@ -22,6 +23,7 @@ export class FanProfileComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.fanId = urlParameters['id'];
+      this.image = urlParameters['image'];
     });
     this.fanToDisplay = this.fanService.getFanById(this.fanId);
   }

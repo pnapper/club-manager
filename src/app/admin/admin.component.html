@@ -9,6 +9,12 @@
         <br>
         <input #newName>
       </div>
+      
+      <div>
+        <label>Fan Photo:</label>
+        <br>
+        <textarea #newImage></textarea>
+      </div>
 
       <div>
         <label>Signup Date:</label>
@@ -33,7 +39,7 @@
         <textarea #newStory></textarea>
       </div>
       <br>
-      <button (click)="submitForm(newName.value, newsignupDate.value, newLocation.value, newStory); newName.value=''; newsignupDate.value=''; newLocation.value=''; newStory.value=''">Add Profile</button>
+      <button (click)="submitForm(newName.value, newsignupDate.value, newLocation.value, newStory, newImage.value); newName.value=''; newsignupDate.value=''; newLocation.value=''; newStory.value=''; newImage.value=''">Add Profile</button>
     </div>
   </div>
 </div>

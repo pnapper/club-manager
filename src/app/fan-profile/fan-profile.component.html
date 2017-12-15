@@ -2,5 +2,6 @@
   <h3>{{(fanToDisplay | async).name}}</h3>
   <h4>Member Since: {{(fanToDisplay | async).signupDate}}</h4>
   <h4>From: {{(fanToDisplay | async).location}}</h4>
-  <p>Story: {{(fanToDisplay | async).story}}
+  <p>Story: {{(fanToDisplay | async).story}}</p>
+  <img src="{{(fanToDisplay | async).image}}" width=200px>
 </div>
