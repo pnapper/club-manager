@@ -22,7 +22,7 @@ export class FanProfileComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.fanId = parseInt(urlParameters['id']);
     });
-    this.fanToDisplay = this.fanService.getFanById(this.fanId);
+    // this.fanToDisplay = this.fanService.getFanById(this.fanId);
   }
 
 }

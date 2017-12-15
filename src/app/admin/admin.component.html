@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Fan Profile</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Fan Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Signup Date:</label>
+        <br>
+        <input id="date" type="date" #newsignupDate>
+      </div>
+
+      <div>
+        <label>Location:</label>
+        <br>
+        <select #newLocation>
+          <option value="Seattle area">Seattle area</option>
+          <option value="North of Seattle">North of Seattle</option>
+          <option value="Eastside">Eastside</option>
+          <option value="South of Seattle">South of Seattle</option>
+        </select>
+      </div>
+      <br>
+      <button (click)="submitForm(newName.value, newsignupDate.value, newLocation.value); newName.value=''; newsignupDate.value=''; newLocation.value=''">Add Profile</button>
+    </div>
+  </div>
+</div>

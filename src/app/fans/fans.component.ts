@@ -20,7 +20,7 @@ export class FansComponent implements OnInit {
   }
 
   goToProfilePage(clickedFan: Fan) {
-     this.router.navigate(['fans', clickedFan.id]);
+    //  this.router.navigate(['fans', clickedFan.id]);
    };
 
 }
