@@ -14,6 +14,10 @@
 <br>
 
 <label>New Fan Story:</label>
-<input [(ngModel)]="selectedFan.story">
+<br>
+<textarea [(ngModel)]="selectedFan.story"></textarea>
+<br>
 
-<button (click)="beginUpdatingFan(selectedFan)">Update</button>
+<button (click)="beginUpdatingFan(selectedFan)">Update Profile</button>
+<hr>
+<button (click)="beginDeletingFan(selectedFan)">Delete Profile</button>

@@ -19,4 +19,10 @@ export class EditProfileComponent implements OnInit {
   beginUpdatingFan(fanToUpdate){
     this.fanService.updateFan(fanToUpdate);
   }
+
+  beginDeletingFan(fanToDelete){
+    if(confirm("Are you sure you want to delete this profile?")){
+      this.fanService.deleteFan(fanToDelete);
+    }
+  }
 }

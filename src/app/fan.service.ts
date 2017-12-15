@@ -31,4 +31,9 @@ export class FanService {
                                story: localUpdatedFan.story
                              });
   }
+
+  deleteFan(localFanToDelete){
+    var fanEntryInFirebase = this.getFanById(localFanToDelete.$key);
+    fanEntryInFirebase.remove();
+  }
 }
