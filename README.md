@@ -36,9 +36,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
  2. Navigate to the project folder in the console and run "npm install" and "bower install".
 
- 3. From the console run the application using "gulp build" and "gulp serve".
+ 3. Open project in Atom or
 
- 4. Enjoy!
+ 4. In src/app create a file named api-keys.ts
+
+ 5. Go to Firebase.com and create a free account.
+
+ always include instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names. Your project READMEs should always setup instructions detailing all necessary steps to get a project up and running. Including adding Firebase credentials.
+
+ 7. From the console run the application using "ng serve".
+
+ 8. Enjoy!
 
 ### Prerequisites
 

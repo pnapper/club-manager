@@ -1,6 +1,6 @@
 <h2>Fans</h2>
 
-<div *ngFor="let fan of fans" (click)="goToProfilePage(fan)" class="panel panel-default">
+<div *ngFor="let fan of fans | async" (click)="goToProfilePage(fan)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{fan.name}}</em> Member since: {{fan.signupDate}} from: {{fan.location}}</h3>
   </div>

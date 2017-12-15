@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Fan } from '../fan.model';
 import { Router } from '@angular/router';
 import { FanService } from '../fan.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-fans',
@@ -10,12 +11,12 @@ import { FanService } from '../fan.service';
   providers: [FanService]
 })
 export class FansComponent implements OnInit {
-  fans: Fan[];
+  fans: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private fanService: FanService) { }
 
   ngOnInit() {
-    this.fans = this.fanService.getFans(); 
+    this.fans = this.fanService.getFans();
   }
 
   goToProfilePage(clickedFan: Fan) {

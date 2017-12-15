@@ -1,0 +1,17 @@
+{ "fans": [{
+    "name": " Sara Anne",
+    "signupDate": "6/17/17",
+    "location": "Seattle",
+    "id": "1"
+    }, {
+    "name": "Wendy",
+    "signupDate": "6/17/17",
+    "location": "Edmonds",
+    "id": "2"
+      }, {
+    "name": "Joey Rad",
+    "singupDate": "8/21/17",
+    "location": "Kirkland",
+    "id": "3"
+  }]
+}

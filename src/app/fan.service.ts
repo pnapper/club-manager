@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Fan } from './fan.model';
 import { FANS } from './mock-fans';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class FanService {
+  fans: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.fans = database.list('fans');
+  }
+
 
   getFans() {
-    return FANS;
+    return this.fans;
   }
 
   getFanById(fanId: number){
