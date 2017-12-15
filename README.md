@@ -1,6 +1,77 @@
 # ClubManager
 
+This is an app that will manage fans of the band Prom Date Mixtape.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+## Specifications
+
+* 1. User can visit website and view a list of fan club members.
+
+ Sample Input: click on Fans List tab.
+ Sample Output:
+ Sara Anne, Member Since: 6/17/2017, Location: Seattle
+ Wendy, Member Since: 6/17/2017, Location: Edmonds
+ Joey Rad, Member Since: 8/19/17, Location: Kirkland
+
+* 2. User can click on an individual fan and see their profile.
+
+ Sample Input: click on individual fan name.
+ Sample Output:
+ Sara Anne, Member Since: 6/17/2017, Location: Seattle, Story: I first saw PDM at the High Dive on Dec. 21st, 2017 and they totally blew me away.......
+
+ * 3. User can visit an about page that explains what the fan club is all about..
+
+ Sample Input: click on About tab.
+ Sample Output: Takes you to the About page.
+
+ * 4. As a User/Administrator you can create a new fan profile.
+
+ * 5. As a User/Administrator you can edit a fan profile.
+
+ * 6. As an User/Administrator you can delete a fan profile.
+
+## Getting Started
+
+ 1. Clone the project from https://github.com/pnapper/local-zoo-angular onto your local machine.
+
+ 2. Navigate to the project folder in the console and run "npm install" and "bower install".
+
+ 3. From the console run the application using "gulp build" and "gulp serve".
+
+ 4. Enjoy!
+
+### Prerequisites
+
+ Web browser required.
+ Firebase API key.
+
+### Installing
+
+ From the console run:
+ npm install
+ bower install
+
+## Technologies Used
+
+ Angular 2
+ Firebase
+ TypeScript
+ JavaScript
+ HTML
+ CSS
+ Bootstrap
+
+ ## Versioning
+
+ version 1.0
+
+ ## Authors
+
+ * **Patrick Napper**  [Github](https://github.com/pnapper)
+
+ ## License
+
+ MIT Licence
 
 ## Development server
 
