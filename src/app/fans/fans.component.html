@@ -1,3 +1,5 @@
 <h2>Fans</h2>
 
-<p>All our fans will be listed here shortly!</p>
+<div *ngFor="let fan of fans">
+    <h3><em>{{fan.name}}</em> Member since: {{fan.signupDate}} from: {{fan.location}}</h3>
+</div>
