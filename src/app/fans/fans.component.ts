@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Fan } from '../fan.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fans',
@@ -7,6 +8,9 @@ import { Fan } from '../fan.model';
   styleUrls: ['./fans.component.css']
 })
 export class FansComponent implements OnInit {
+
+  constructor(private router: Router) { }
+
   fans: Fan[] = [
    new Fan("Sara Anne", "6/17/2017",
        "Seattle", 1),
@@ -15,9 +19,12 @@ export class FansComponent implements OnInit {
    new Fan("Joey Rad", "8/19/17",
        "Kirkland", 3),
  ];
-  constructor() { }
 
   ngOnInit() {
   }
+
+  goToProfilePage(clickedFan: Fan) {
+     this.router.navigate(['fans', clickedFan.id]);
+   };
 
 }
