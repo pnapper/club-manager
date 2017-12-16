@@ -30,23 +30,53 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
  * 6. As an User/Administrator you can delete a fan profile.
 
+## Wish List Specs
+
+ * 1. Track number of shows a fan attends. Once they have attended 10 shows they achieve Super-Fan status.
+
+ * 2. Add a chat room forum so fans can interact.
+
+ * 3. Add a Performance Dates page listing all upcoming performances for the band.
+
+ * 4. Add property showing last show attended for each fan.
+
+ * 5. Add property for fans to add their favorite songs to their profile.
+
+ * 6. Add ability for fans to request songs for upcoming shows and/or new songs to play.
+
+ * 7. Add exclusive content for fans including videos, recordings, advance tickets.
+
+ * 8. Add login authentication for fans and administrators.
+
+ * 9. Allow fans to upload picture and videos from band performances and events.
+
 ## Getting Started
 
  1. Clone the project from https://github.com/pnapper/local-zoo-angular onto your local machine.
 
  2. Navigate to the project folder in the console and run "npm install" and "bower install".
 
- 3. Open project in Atom or
+ 3. Open project in Atom.
 
  4. In src/app create a file named api-keys.ts
 
- 5. Go to Firebase.com and create a free account.
+ 5. Go to Firebase.com and log-in to your account or create a free account.
 
- always include instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names. Your project READMEs should always setup instructions detailing all necessary steps to get a project up and running. Including adding Firebase credentials.
+ 6. Get an api key from Firebase.
 
- 7. From the console run the application using "ng serve".
+ 7. In Atom create a file in the app/ directory called api-keys.ts. Paste this code adding your api key.
+ export var masterFirebaseConfig = {
+   apiKey: "<API-KEY>",
+   authDomain: "club-manager-60ec9.firebaseapp.com",
+   databaseURL: "https://club-manager-60ec9.firebaseio.com",
+   projectId: "club-manager-60ec9",
+   storageBucket: "",
+   messagingSenderId: "122773142418"
+   };
 
- 8. Enjoy!
+ 8. From the console run the application using "ng serve".
+
+ 9. Enjoy!
 
 ### Prerequisites
 
