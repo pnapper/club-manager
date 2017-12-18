@@ -60,23 +60,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
  4. In src/app create a file named api-keys.ts
 
- 5. Go to Firebase.com and log-in to your account or create a free account.
+ 5. In Atom create a file in the app/ directory called api-keys.ts. Paste this codeinto it.
 
- 6. Get an api key from Firebase.
-
- 7. In Atom create a file in the app/ directory called api-keys.ts. Paste this code adding your api key.
+ ```
  export var masterFirebaseConfig = {
-   apiKey: "<API-KEY>",
+   apiKey: "AIzaSyAH1NsTYxojYjK6ecQA855DsKYU-mBAv58",
    authDomain: "club-manager-60ec9.firebaseapp.com",
    databaseURL: "https://club-manager-60ec9.firebaseio.com",
    projectId: "club-manager-60ec9",
    storageBucket: "",
    messagingSenderId: "122773142418"
    };
+   
+```
 
- 8. From the console run the application using "ng serve".
+ 6. From the console run the application using "ng serve".
 
- 9. Enjoy!
+ 7. Enjoy!
 
 ### Prerequisites
 
